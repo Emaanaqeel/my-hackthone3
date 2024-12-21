@@ -20,7 +20,7 @@ export default function Confirmation() {
             <span>I agree with our terms and conditions and privacy policy.</span>
           </label>
         </div>
-        <Link href="">
+        <Link href="/admindashboard">
         <button className="bg-blue-500 text-white px-6 py-3 mt-6 rounded-lg w-full hover:bg-indigo-700">
           Rent Now
         </button>

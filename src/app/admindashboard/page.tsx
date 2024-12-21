@@ -3,7 +3,8 @@ import { FaCarAlt } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import SearchSection from "../components/SearchSection";
+import PickDrop from "../components/PickDrop";
 
 
 export default function Dashboard() {
@@ -13,8 +14,8 @@ export default function Dashboard() {
     <div className="flex flex-col lg:flex-row bg-gray-100 min-h-screen">
       {/* Sidebar */}
     
-       {/* Sidebar */}
-       <aside className="w-64 h-screen bg-gray-100 border-r px-6 py-8 flex flex-col justify-between">
+      
+       <aside className="md:flex hidden w-64 h-screen bg-gray-100 border-r px-6 py-8  flex-col  justify-between">
       <div>
         <h2 className="text-xl font-bold text-gray-800 mb-6">Main Menu</h2>
         <nav className="space-y-4">
@@ -22,7 +23,7 @@ export default function Dashboard() {
             <FiHome className="mr-3" size={20} />
             Dashboard
           </a>
-          <a href="#" className="flex items-center text-gray-600 hover:text-blue-500">
+          <a href="/" className="flex items-center text-gray-600 hover:text-blue-500">
             <FaCarAlt  className="mr-3" size={20} />
             Car Rent
           </a>
@@ -60,12 +61,12 @@ export default function Dashboard() {
       {/* Main Content */}
 
       <div className="flex-1 p-4 lg:p-8">
-        <div className="grids grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="flex grids grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* left section */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="flex  lg:col-span-2 space-y-6">
             {/* rental section */}
-            <div className="bg-white p-4 lg:p-6 rounded-lg shadow-lg">
+            <div className="bg-white  p-4 lg:p-6 rounded-lg shadow-lg">
               <h2 className="font-bold text-lg lg:text-xl mb-3 lg:mb-5">
                 Details Rental
               </h2>
@@ -96,7 +97,7 @@ export default function Dashboard() {
 
               {/* pick up */}
               <div className="mb-4 lg:mb-6">
-
+             <PickDrop/>
               </div>
 
               {/* totalprice */}
@@ -118,7 +119,7 @@ export default function Dashboard() {
 
           {/* right section */}
 
-          <div className="space-y-4">
+          <div className="w-[50%] space-y-4">
             {/* top 5 car rental */}
             <div className="bg-white p-4 lg:p-5 rounded-lg shadow-lg">
               <h2 className="font-semibold text-lg lg:text-xl mb-4 text-center">

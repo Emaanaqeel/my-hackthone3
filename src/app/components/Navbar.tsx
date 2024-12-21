@@ -41,10 +41,10 @@ export default function Navbar  ()  {
     </div>
      
       
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-4 ">
 
        
-        <IoIosHeart className='text-2xl hover:text-gray-500'/>
+        <IoIosHeart className=' text-2xl hover:text-gray-500'/>
     <BiSolidBell  className='text-2xl hover:text-gray-500'/>
     <IoMdSettings className='text-2xl hover:text-gray-500 ' />
 
