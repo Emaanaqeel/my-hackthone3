@@ -91,23 +91,23 @@ const CarListing = () => {
                       <div>
                         
                         <img
-                          src="/images/view1.png"
+                          src="/images/View1.png"
                           alt="Car"
                           className="rounded-lg w-full mb-4 object-cover"
                         />
                         <div className="grid grid-cols-3 gap-4">
                           <img
-                            src="/images/view2.png"
+                            src="/images/View2.png"
                             alt="Thumbnail 1"
                             className="rounded-lg cursor-pointer hover:ring-2 hover:ring-blue-500 transition"
                           />
                           <img
-                            src="/images/view3.png"
+                            src="/images/View3.png"
                             alt="Thumbnail 2"
                             className="rounded-lg cursor-pointer hover:ring-2 hover:ring-blue-500 transition"
                           />
                           <img
-                            src="/images/view4.png"
+                            src="/images/View4.png"
                             alt="Thumbnail 3"
                             className="rounded-lg cursor-pointer hover:ring-2 hover:ring-blue-500 transition"
                           />
